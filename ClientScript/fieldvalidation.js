@@ -12,7 +12,7 @@ When a partner is deleted, the validateDelete event updates a memo field to indi
 When adding a new partner or editing an existing partner, the validateInsert and validateLine events ensure that their contribution is set to 100%.
  */
 define(['N/error'],
-    function(error) {
+    function(err) {
         function pageInit(context) {
             if (context.mode !== 'create')
                 return;
